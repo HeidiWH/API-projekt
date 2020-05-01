@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+}
+body {
+    background-color:#FBB2B2;
+}
+
+.overskrift{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin: 0px;
+}
+.overskrift i {
+    font-size: 65px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: calc(9px + 6vw);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(49, 49, 49);
+    text-align: left;
+    align-self: center;
+    margin: 5px;
+    padding-left: 20px;
+}
+main{
+    display: grid;
+}
+.spil_img{
+    position: relative;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction:row-reverse;
+}
+.teller {
+    width: 100%;    
+}
+.fortune_teller{
+    width: 50%;
+    height: 35%;
+    font-size: calc(9px + 1.5vw);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(49, 49, 49);
+    position: absolute;
+    border: none;
+    resize: none;
+    background: transparent;
+    margin-top: 47%;
+    margin-left: 41%;
+    text-align: center;
+}
+#myBtn.prøv_mig_knap {
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 2%;
+    background-color: #FBB2B2;
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    position: absolute;
+    margin-top: 90%;
+    margin-bottom: 5%;
+
+}
+
+.socialmedia_2 {
+    display: none;
+}
+.text{
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 10px;
+    justify-self: center; 
+}
+h2{
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 30px ;  
+}
+ul{
+    margin-bottom: 50px;
+    font-size: 3vw;
+}
+li{
+    
+    margin: 10px;
+    font-size: 20px;
+}
+
+.signup {
+    margin: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  
+    background-color:#86ECEC; 
+
+}
+.follow{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#86ECEC; 
+    font-size: 3vw;
+    color: rgb(49, 49, 49);
+    margin:10px;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    border: none;
+    -webkit-box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    box-shadow: 2px 7px 15px 1px rgba(0,0,0,0.17);
+    background-color: #FBB2B2;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+}
+
+input {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+    font-size: 2vw;
+    font-style: italic;
+    color:lightgray;
+}
+
+.socialmedia {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    color: white;
+}
+.socialmedia i {
+    font-size: 48px;
+}
+
+
+
+
+
+@media (min-width:1025px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .overskrift{
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    .socialmedia_2{
+        justify-self: right;
+        align-self: center;
+        display: flex;
+    }
+    .socialmedia_2 i{
+        font-size: 48px;
+    }
+    p{
+        grid-column: 1/3;
+        font-size: 2vw;
+    }
+    .spil_img{
+        grid-column: 1/2;
+    }
+    .prøv_mig_knap{
+        font-size: 2vw;
+    }
+    .text{
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+    h2{
+        margin-bottom: 50px;
+        font-size: 3vw;
+    }
+    li{
+        margin: 30px;
+        font-size: 2vw;
+    }
+    .signup{
+        grid-column: 1/3;
+        margin-bottom: 30px;
+    }
+    .socialmedia{
+        display: none;
+    }
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+   The Close Button 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
